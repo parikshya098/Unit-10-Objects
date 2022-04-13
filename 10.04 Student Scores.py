@@ -46,7 +46,7 @@ for line in filename:
 
 print('{:>10}{:>10}{:>14}{:>15}{:>15}{:>10}'.format('First', 'Last', 'ID', 'Running', 'Semester', 'Letter'))
 print('{:>10}{:>10}{:>14}{:>15}{:>15}{:>10}'.format('Name', 'Name', 'Number', 'Average', 'Average', 'Grade'))
-print('-' * 75)
+print('-'* 78)
 
 for std in stud_list:
     print('{:>10}{:>10}{:>14}{:>15.2f}{:>15.2f}{:>10}'.format(std.FirstName, std.LastName, std.TNumber,
