@@ -25,7 +25,7 @@ class HandleFile:
         for line in lines:
             data = line.split(", ")
             employee = Employee(data[0], data[1], data[2], data[3], data[4])
-            print(employee.FirstName,"      ", employee.LastName,"   ", employee.IDNumber, "    " ,employee.HoursWorked,
+            print(employee.FirstName,"      ", employee.LastName,"  ", employee.IDNumber, "    " ,employee.HoursWorked,
                   "       ", employee.Wage, "     ", employee.WeeklyPay())
 
 
