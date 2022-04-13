@@ -38,11 +38,11 @@ class Student():
         filename = '10.04 StudentScores.txt' 
 
 stud_list = []
-with open('10.04 StudentScores.txt', 'r') as infile:
-    for line in infile:
-        line = line.strip().split(',')
-        s = Student(line[0], line[1], line[2], line[3:])
-        stud_list.append(s)
+filename = open('10.04 StudentScores.txt', 'r')
+for line in filename:
+    line = line.strip().split(',')
+    s = Student(line[0], line[1], line[2], line[3:])
+    stud_list.append(s)
 
 print('{:>10}{:>10}{:>14}{:>15}{:>15}{:>10}'.format('First', 'Last', 'ID', 'Running', 'Semester', 'Letter'))
 print('{:>10}{:>10}{:>14}{:>15}{:>15}{:>10}'.format('Name', 'Name', 'Number', 'Average', 'Average', 'Grade'))
