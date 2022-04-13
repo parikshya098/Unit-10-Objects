@@ -15,4 +15,3 @@ print("{:>13}{:>13}{:>13}".format("Description", "Units On Hand", "Price", "Inve
 print("{:>13}{:>13}{:>13}".format(retail_item.Description, retail_item.UnitOnHand, retail_item.Price, retail_item.InventoryValue))
 
 print() # Add an extra blank line for readability
-
