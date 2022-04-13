@@ -1,6 +1,7 @@
 class RetailItem:
     def __init__(self, Description="", UnitsOnHand=0, Price=0):
-        self.Description = Description self. Units On Hand = Units On Hand
+        self.Description = Description 
+        self.UnitsOnHand = UnitsOnHand
         self.Price = Price
 
     def InventoryValue(self):
@@ -8,7 +9,8 @@ class RetailItem:
     def main():
         with open("10.02 Inventory.txt") as file:
             for line in file: 
-                description, units_on_hand, price = line.split(","), retailitem = RetailItem(description, int(units_on_hand), float(price))
+                description, units_on_hand, price = line.split(",")
+                retailitem = RetailItem(description, int(units_on_hand), float(price))
 
 print("Description:", retail_item. Description) 
 print("Units On Hand:", retail_item. UnitsOnHand) 
