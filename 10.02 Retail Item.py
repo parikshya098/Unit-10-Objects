@@ -6,12 +6,14 @@ class RetailItem:
     def InventoryValue(self): 
         return (self.UnitOnHand * self.Price) 
     def main():
-        file1 = open("10.02 Inventory.txt", "r")
-        for line in file1:
-            Description, UnitOnHand, Price = line.split(",") 
-            retail_item = RetailItem(Description, int(UnitOnHand), float(Price)
-           
-print("{:>13}{:>13}{:>13}".format("Description", "Units On Hand", "Price", "Inventory Value"))
-print("{:>13}{:>13}{:>13}".format(retail_item.Description, retail_item.UnitOnHand, retail_item.Price, retail_item.InventoryValue))
-
-print() # Add an extra blank line for readability
+        with open("10.02 Inventory.txt") as file:
+            for line in file:
+                description, unit_on_hand, price = line.split(",") 
+                retail_item = RetailItem(description, int(unit_on_hand), float(price))
+                print("Description:", retail_item.Description) 
+                print("Units On Hand:", retail_item.UnitOnHand) 
+                print("Price:", retail_item.Price) 
+                print("Inventory Value:", retail_item.InventoryValue()) 
+                    
+                print() # Add an extra blank line for readability
+                main()
